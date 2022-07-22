@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(213, 232, 232);
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    color: rgb(16, 16, 115);
+}
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.task-input {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+.submit-btn {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    color: rgb(16, 16, 115);
+    background: white;
+}
+
+.submit-btn:hover {
+    background: rgb(16, 16, 115);
+    color: white;
+
+}

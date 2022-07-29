@@ -23,14 +23,14 @@ form {
 }
 
 .task-input {
-    padding: 0.5rem;
+    padding: 1rem;
     font-size: 2rem;
     border: none;
     background: white;
 }
 
 .submit-btn {
-    padding: 0.5rem;
+    padding: 1rem;
     font-size: 2rem;
     border: none;
     color: rgb(16, 16, 115);
@@ -40,5 +40,55 @@ form {
 .submit-btn:hover {
     background: rgb(16, 16, 115);
     color: white;
+}
 
+.task-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-list {
+    list-style: none;
+    width: 30%;
+}
+
+.task {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task li {
+    flex: 1;
+}
+
+.delete-btn {
+    color: red;
+    background: white;
+    border: none;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.done-btn {
+    color: green;
+    background: white;
+    border: none;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.delete-btn:hover {
+    color: white;
+    background: red;
+}
+
+.done-btn:hover {
+    color: white;
+    background: green;
 }

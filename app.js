@@ -8,7 +8,7 @@ submitBtn.addEventListener("click", function (event) {
   event.preventDefault();
   // create div to hold a task, done button, and a delete button
   const taskDiv = document.createElement("div");
-  taskDiv.classList.add("tasks");
+  taskDiv.classList.add("task");
 
   const newTasks = document.createElement("li");
   newTasks.classList.add("new-task");
@@ -20,8 +20,8 @@ submitBtn.addEventListener("click", function (event) {
   taskDiv.appendChild(doneBtn);
 
   const deleteBtn = document.createElement("button");
-  doneBtn.innerHTML = '<i class="fa-solid fa-x"></i>';
-  doneBtn.classList.add("delete-btn");
+  deleteBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+  deleteBtn.classList.add("delete-btn");
   taskDiv.appendChild(deleteBtn);
 
   taskList.appendChild(taskDiv);

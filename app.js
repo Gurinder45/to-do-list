@@ -11,6 +11,7 @@ submitBtn.addEventListener("click", function (event) {
   taskDiv.classList.add("task");
 
   const newTasks = document.createElement("li");
+  newTasks.innerText = taskInput.value;
   newTasks.classList.add("new-task");
   taskDiv.appendChild(newTasks);
 
@@ -25,4 +26,19 @@ submitBtn.addEventListener("click", function (event) {
   taskDiv.appendChild(deleteBtn);
 
   taskList.appendChild(taskDiv);
+  //clear value in input fie ld
+  taskInput.value = "";
+});
+
+// handle done and delete buttons
+taskList.addEventListener("click", function (event) {
+  const selected = event.target;
+  if (selected.classList[0] === "delete-btn") {
+    const task = selected.parentElement;
+    task.remove();
+  }
+  if (selected.classList[0] === "done-btn") {
+    const task = selected.parentElement;
+    task.classList.toggle("finished-task");
+  }
 });
